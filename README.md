@@ -1,6 +1,6 @@
 # daccord JavaConnector Extension – Microsoft Entra ID
 
-A [daccord](https://www.guh-systems.de) JavaConnector Extension that reads identity data from **Microsoft Entra ID** (formerly Azure AD) via the **Microsoft Graph API** and imports it into daccord.
+A [daccord](https://www.daccord.de) JavaConnector Extension that reads identity data from **Microsoft Entra ID** (formerly Azure AD) via the **Microsoft Graph API** and imports it into daccord.
 
 ## What it does
 
