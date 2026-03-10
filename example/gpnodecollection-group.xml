@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+    <np_params>
+        <np_param1>user</np_param1> <!-- objecttype -->
+        <np_param2>users</np_param2> <!-- resourcepath -->
+        <np_param3>id</np_param3> <!-- uniqueattribute -->
+        <np_param4>id,userType,displayName,givenName,accountEnabled,companyName,mail,objectId,surname,userPrincipalName,onPremisesSyncEnabled,onPremisesSamAccountName,createdDateTime</np_param4> <!-- select -->
+        <np_param5></np_param5> <!-- filter -->
+        <np_param6></np_param6> <!-- expand -->
+        <np_param7>users/$id/memberOf/microsoft.graph.group</np_param7> <!-- resourcepathsubquery -->
+        <np_param8>displayName</np_param8> <!-- resourcepathsubquery select -->
+        <np_param9></np_param9> <!-- resourcepathsubquery filter -->
+        <np_param10>memberof-</np_param10> <!-- subqueryattributeprefix -->
+        <np_param11></np_param11>
+        <np_param12></np_param12>
+        <np_param13></np_param13>
+        <np_param14></np_param14>
+        <np_param15></np_param15>
+        <np_pwparam1></np_pwparam1>
+        <np_pwparam2></np_pwparam2>
+        <np_pwparam3></np_pwparam3>
+        <np_pwparam4></np_pwparam4>
+        <np_pwparam5></np_pwparam5>
+    </np_params>
+    
+    <!-- Whitelist: Only users with memberOf "dac-admin" -->
+    <whitelist>
+        <condition>
+            <group_nexus>OR</group_nexus>
+            <group_internal_nexus>AND</group_internal_nexus>
+            <groups>
+                <group>
+                    <rules>
+                        <rule>
+                            <type></type>
+                            <attribute>memberof-displayName</attribute>
+                            <operator>EQUALS</operator>
+                            <value>dac-admin</value>
+                        </rule>
+                    </rules>
+                </group>
+            </groups>
+        </condition>
+    </whitelist>
+    
+    <!-- Blacklist (empty by default) -->
+    <blacklist>
+    </blacklist>
+    
+    <!-- Skipproperties (comma-separated) -->
+    <skipproperties></skipproperties>
+</collection>

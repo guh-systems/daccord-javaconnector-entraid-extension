@@ -1,0 +1,1 @@
+java -Dlog4j2.level=DEBUG -jar daccord-javaconnector-entraid-extension-1.0.0-SNAPSHOT-runnable.jar getnodedata /software/test/gpconnect.xml /software/test/gpnodecollection.xml /software/test

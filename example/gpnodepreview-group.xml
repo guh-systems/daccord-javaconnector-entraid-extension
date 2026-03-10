@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cp_params>
+	<cp_param1>group</cp_param1> <!-- objecttype -->
+	<cp_param2>groups</cp_param2> <!-- resourcepath -->
+	<cp_param3>id</cp_param3> <!-- uniqueattribute -->
+	<cp_param4>id,displayName,description</cp_param4> <!-- select -->
+	<cp_param5>startswith(displayName, 'bub')</cp_param5> <!-- filter -->
+	<cp_param6></cp_param6> <!-- expand -->
+	<cp_param7></cp_param7> <!-- resourcepathsubquery -->
+	<cp_param8></cp_param8> <!-- resourcepathsubquery select -->
+	<cp_param9></cp_param9> <!-- resourcepathsubquery filter -->
+	<cp_param10></cp_param10> <!-- subqueryattributeprefix -->
+	<cp_param11></cp_param11>
+	<cp_param12></cp_param12>
+	<cp_param13></cp_param13>
+	<cp_param14></cp_param14>
+	<cp_param15></cp_param15>
+	<cp_pwparam1></cp_pwparam1>
+	<cp_pwparam2></cp_pwparam2>
+	<cp_pwparam3></cp_pwparam3>
+	<cp_pwparam4></cp_pwparam4>
+	<cp_pwparam5></cp_pwparam5>
+</cp_params>
+ 

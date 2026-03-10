@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+    <rp_params>
+        <rp_param1>usertogroup</rp_param1> <!-- objecttype -->
+        <rp_param2>users</rp_param2> <!-- resourcepath -->
+        <rp_param3>id,userPrincipalName,displayName</rp_param3> <!-- select -->
+        <rp_param4>id</rp_param4> <!-- sourceuniqueattribute -->
+        <rp_param5></rp_param5> <!-- filter -->
+        <rp_param6>users/$id/memberOf/microsoft.graph.group</rp_param6> <!-- resourcepathsubquery -->
+        <rp_param7>id,displayName</rp_param7> <!-- resourcepathsubquery select -->
+        <rp_param8></rp_param8> <!-- resourcepathsubquery filter -->
+        <rp_param9>target-</rp_param9> <!-- subqueryattributeprefix -->
+        <rp_pwparam1></rp_pwparam1>
+        <rp_pwparam2></rp_pwparam2>
+        <rp_pwparam3></rp_pwparam3>
+        <rp_pwparam4></rp_pwparam4>
+    </rp_params>
+    
+    <!-- Whitelist: Only relations with target "dac-standard" -->
+    <whitelist>
+        <condition>
+            <group_nexus>OR</group_nexus>
+            <group_internal_nexus>AND</group_internal_nexus>
+            <groups>
+                <group>
+                    <rules>
+                        <rule>
+                            <type></type>
+                            <attribute>target-displayName</attribute>
+                            <operator>EQUALS</operator>
+                            <value>dac-standard</value>
+                        </rule>
+                    </rules>
+                </group>
+            </groups>
+        </condition>
+    </whitelist>
+    
+    <blacklist>
+    </blacklist>
+    
+    <!-- Skipproperties (comma-separated) -->
+    <skipproperties>target-displayName</skipproperties>
+</collection>

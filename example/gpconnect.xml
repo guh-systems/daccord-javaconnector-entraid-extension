@@ -1,0 +1,14 @@
+<gp_params>
+	<gp_param1>https://login.microsoftonline.com/</gp_param1> <!-- authority -->
+	<gp_param2>YOUR_TENANT_ID</gp_param2> <!-- tenant -->
+	<gp_param3>yourdomain.com</gp_param3> <!-- tenantname -->
+	<gp_param4>YOUR_CLIENT_ID</gp_param4> <!-- clientid -->
+	<gp_param5>https://graph.microsoft.com/.default</gp_param5> <!-- scope -->
+	<gp_param6>YOURDOMAIN</gp_param6> <!-- connecteddomain -->
+	<gp_param7></gp_param7> <!-- proxyhost -->
+	<gp_param8></gp_param8> <!-- proxyport -->
+	<gp_param9></gp_param9> <!-- sslproxy -->
+	<gp_param10></gp_param10> <!-- proxyusername -->
+	<gp_pwparam1>YOUR_CLIENT_SECRET</gp_pwparam1> <!-- secret -->
+	<gp_pwparam2></gp_pwparam2> <!-- proxypassword -->
+</gp_params>

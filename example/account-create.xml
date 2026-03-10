@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provisioning>
+    <data>
+        <attributes>
+            <attribute name="displayName">
+                <value>Max Mustermann</value>
+            </attribute>
+            <attribute name="mailNickname">
+                <value>mmustermann</value>
+            </attribute>
+            <attribute name="userPrincipalName">
+                <value>mmustermann@yourdomain.onmicrosoft.com</value>
+            </attribute>
+            <attribute name="givenName">
+                <value>Max</value>
+            </attribute>
+            <attribute name="surname">
+                <value>Mustermann</value>
+            </attribute>
+            <attribute name="accountEnabled">
+                <value>true</value>
+            </attribute>
+        </attributes>
+    </data>
+    <parameters>
+        <parameter name="strategy">standalone</parameter>
+    </parameters>
+</provisioning>
