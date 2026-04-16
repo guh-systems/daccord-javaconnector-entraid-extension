@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  createpermission — Weist einen Benutzer einer EntraID-Gruppe zu.
+
+  Testaufruf:
+    java -jar <jar> createpermission examples/gpconnect.xml examples/permission-create.xml
+
+  <attributes>:
+    accountuniqueid        → pp_data_accountuniqueid        → EntraID Object-ID des Benutzers
+    securityobjectuniqueid → pp_data_securityobjectuniqueid → EntraID Object-ID der Gruppe
+-->
+<provisioning>
+  <data>
+    <attributes>
+      <attribute name="accountuniqueid">
+        <value>REPLACE-WITH-USER-OBJECT-ID</value>
+      </attribute>
+      <attribute name="securityobjectuniqueid">
+        <value>REPLACE-WITH-GROUP-OBJECT-ID</value>
+      </attribute>
+    </attributes>
+  </data>
+  <parameters>
+  </parameters>
+</provisioning>

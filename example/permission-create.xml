@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<provisioning>
-    <data>
-        <parameters>
-            <parameter name="accountuniqueid">12345-abc-67890</parameter>
-            <parameter name="securityobjectuniqueid">98765-xyz-12345</parameter>
-        </parameters>
-    </data>
-</provisioning>
